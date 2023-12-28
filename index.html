@@ -6,37 +6,108 @@
     <title>Document</title>
 
     <!-- Link Font Awesome -->
-    <!--    <link
+    <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
       integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
-    /> -->
+    />
 
     <!-- Link Bootstrap CSS -->
-    <!--    <link
+    <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
       rel="stylesheet"
       integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
       crossorigin="anonymous"
-    /> -->
+    />
 
     <!-- Link Bootstrap icons -->
-    <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.min.css"> -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.min.css"
+    />
 
     <!-- Link Bootstrap JAVASCRIPT -->
-    <!--     <script
+    <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
       crossorigin="anonymous"
-    ></script> -->
+    ></script>
 
     <!-- Link CSS -->
     <link rel="stylesheet" href="./css/style.css" />
   </head>
 
   <body>
+    <!-- NAV BAR -->
+    <nav class="nav navbar navbar-expand-lg bg-body-tertiary sticky-top">
+      <div class="container-fluid">
+        <!-- LOGO NAV BAR-->
+        <a class="d-none d-lg-block mx-2" href="#">
+          <img src="./img/logo.svg" alt="" />
+        </a>
+        <a href="#">
+          <img src="./img/mobile-logo.png" alt="" class="logo-icon d-lg-none" />
+        </a>
+
+        <!-- SEARCH NAV BAR -->
+        <div class="form-group flex-fill">
+          <form class="d-flex cell-search" role="search">
+            <i class="bi bi-search text-secondary form-control-feedback"></i>
+            <input
+              class="form-control me-2 bg-body-secondary"
+              type="search"
+              placeholder="Prova a cercare: Lezioni di Laravel"
+              label="Search"
+            />
+          </form>
+        </div>
+
+        <!-- NAV BAR DX -->
+        <ul
+          class="navbar-nav my-2 my-lg-0 mx-auto navbar-nav-scroll"
+          style="--bs-scroll-height: 100px"
+        >
+          <li class="nav-item d-none d-lg-block">
+            <a class="nav-link" href="#"
+              ><i class="bi bi-list text-secondary"></i
+            ></a>
+          </li>
+
+          <li class="nav-item d-none d-lg-block">
+            <a class="nav-link" href="#"
+              ><i class="bi bi-question-octagon-fill text-secondary"></i
+            ></a>
+          </li>
+
+          <li class="nav-item d-none d-lg-block">
+            <a class="nav-link" href="#"
+              ><i class="bi bi-three-dots-vertical text-secondary"></i
+            ></a>
+          </li>
+
+          <!-- * SPECIAL ITEM NAV BAR -->
+          <li class="nav-item dropdown">
+            <a
+              class="nav-link"
+              href="#"
+              role="button"
+              data-bs-toggle="dropdown"
+              aria-expanded="false"
+            >
+              <i class="bi bi-bell-fill orange-bell"></i>
+            </a>
+            <ul class="dropdown-menu dropdown-menu-end">
+              <li><a class="dropdown-item" href="#">Profilo</a></li>
+              <li><a class="dropdown-item" href="#">Fatturazione</a></li>
+              <li><a class="dropdown-item" href="#">Logout</a></li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
     <div class="container"></div>
   </body>
 </html>
