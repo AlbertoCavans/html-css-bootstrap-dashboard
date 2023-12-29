@@ -54,6 +54,11 @@ i {
   width: 20px;
 }
 
+a {
+  color: currentColor;
+  text-decoration: none;
+}
+
 /** NAV BAR */
 
 .nav {
@@ -88,58 +93,6 @@ i {
 .orange-bell {
   color: orange;
 }
-
-/* * MAIN */
-
-/* * COL MENU */
-
-#main-sidebar {
-  width: 50px;
-  height: calc(100vh - 70px);
-}
-
-.upper-main-sidebar {
-  margin-bottom: 20px;
-  position: relative;
-  width: 50px;
-  height: 120px;
-  background-color: rgb(5 30 52);
-  color: white;
-  font-size: 1rem;
-}
-
-.upper-main-sidebar::after {
-  content: "";
-  position: absolute;
-  bottom: -39px;
-  border-bottom: 40px solid transparent;
-  border-right: 51px solid rgb(5 30 52);
-}
-
-.bottom-main-sidebar {
-  margin-top: 20px;
-  position: relative;
-  width: 50px;
-  height: calc(100% - 120px);
-  background-color: rgb(19 41 63);
-  color: white;
-  font-size: 1rem;
-}
-
-.bottom-main-sidebar::after {
-  content: "";
-  position: absolute;
-  top: -39px;
-  border-top: 40px solid transparent;
-  border-left: 50px solid rgb(19 41 63);
-}
-
-@media all and (min-width: 576px) {
-  .nav {
-    height: 90px;
-  }
-}
-
 /* * MAIN */
 
 /* * COL MENU */
@@ -149,22 +102,119 @@ i {
   height: calc(100vh - 90px);
 }
 
+#main-sidebar a:hover {
+  background-color: lightgray;
+}
+
 .upper-main-sidebar {
+  margin-bottom: 20px;
+  position: relative;
   width: 70px;
-  height: 150px;
+  height: 180px;
+  background-color: rgb(5 30 52);
+  color: white;
   font-size: 1.3rem;
+  padding-bottom: 10px;
 }
 
 .upper-main-sidebar::after {
+  content: "";
+  position: absolute;
+  bottom: -39px;
+  border-bottom: 40px solid transparent;
   border-right: 71px solid rgb(5 30 52);
 }
 
 .bottom-main-sidebar {
+  margin-top: 20px;
+  position: relative;
   width: 70px;
-  height: calc(100% - 170px);
+  height: calc(100% - 180px);
+  background-color: rgb(19 41 63);
+  color: white;
   font-size: 1.3rem;
 }
 
 .bottom-main-sidebar::after {
   border-left: 70px solid rgb(19 41 63);
+  content: "";
+  position: absolute;
+  top: -39px;
+  border-top: 40px solid transparent;
+}
+
+/* ! RESPOSIVE TABLET */
+@media all and (min-width: 576px) {
+  .nav {
+    height: 70px;
+  }
+
+  /* * MAIN */
+
+  /* * COL MENU */
+
+  #main-sidebar {
+    width: 50px;
+    height: calc(100vh - 90px);
+  }
+
+  .upper-main-sidebar {
+    width: 50px;
+    height: 160px;
+    font-size: 1rem;
+    padding-bottom: 10px;
+  }
+
+  .upper-main-sidebar::after {
+    border-right: 51px solid rgb(5 30 52);
+  }
+
+  .bottom-main-sidebar {
+    width: 50px;
+    height: calc(100% - 160px);
+    font-size: 1rem;
+  }
+
+  .bottom-main-sidebar::after {
+    top: -39px;
+    border-left: 50px solid rgb(19 41 63);
+  }
+}
+
+/* ! RESPONSIVE DESKTOP */
+@media all and (min-width: 992px) {
+  .nav {
+    height: 90px;
+  }
+
+  /* * MAIN */
+
+  /* * COL MENU */
+
+  #main-sidebar {
+    width: 150px;
+    height: calc(100vh - 90px);
+  }
+
+  .upper-main-sidebar {
+    width: 150px;
+    height: 190px;
+    font-size: 1.2rem;
+    padding-bottom: 10px;
+  }
+
+  .upper-main-sidebar::after {
+    border-right: 151px solid rgb(5 30 52);
+  }
+
+  .bottom-main-sidebar {
+    width: 150px;
+    height: calc(100% - 210px);
+    font-size: 1.2rem;
+  }
+
+  .bottom-main-sidebar::after {
+    top: -39px;
+    border-left: 150px solid rgb(19 41 63);
+  }
 }
