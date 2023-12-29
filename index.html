@@ -148,15 +148,23 @@
       <!-- * LARGEST CONTAINER -->
       <div class="container-fluid h-100" id="largest-container">
         <!-- * BLUE ROW -->
-        <div class="row text-white bg-primary">
-          <div class="col- py-3">
-            <h5 class="d-inline-block p-2">Nuovo studente</h5>
-            <button type="button" class="btn btn-outline-light m-2">
-              <i class="fa-solid fa-plus"></i>
-            </button>
+        <div class="row text-white bg-primary py-md-2" id="blue-row">
+          <!-- COL 1 - BLUE ROW -->
+          <div
+            class="col-12 col-md-4 col-lg-3 py-2 order-md-1 py-lg-0 d-lg-flex lg-justify-content-center"
+            id="col-1-blue-row"
+          >
+            <div class="d-block">
+              <h6 class="d-inline-block p-2">Nuovo studente</h6>
+              <button type="button" class="btn btn-outline-light m-2">
+                <i class="fa-solid fa-plus"></i>
+              </button>
+            </div>
           </div>
-          <div class="col-12">
-            <h1 class="d-inline-block p-2">Boolean</h1>
+
+          <!-- COL 2 - BLUE ROW -->
+          <div class="col-12 col-md-4 col-lg-6 py-1" id="col-2-blue-row">
+            <h2 class="d-inline-block">Boolean</h2>
             <button
               type="button"
               class="btn button-dark-blue text-white border-white rounded-pill"
@@ -164,7 +172,7 @@
               Piano blaze
             </button>
             <br />
-            <div class="py-1">
+            <div>
               <button
                 type="button"
                 class="btn button-dark-blue text-white border-white rounded-pill"
@@ -180,8 +188,10 @@
               </button>
             </div>
           </div>
-          <div class="col-12 py-3">
-            <h5>Studenti online negli ultimi 30 minuti</h5>
+
+          <!-- COL 3 - BLUE ROW -->
+          <div class="col-12 col-md-4 col-lg-3 py-2" id="col-3-blue-row">
+            <h6>Studenti online negli ultimi 30 minuti</h6>
             <h2>125</h2>
           </div>
         </div>
