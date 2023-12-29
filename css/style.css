@@ -223,4 +223,22 @@ a {
     top: -39px;
     border-left: 150px solid rgb(19 41 63);
   }
+
+  /* * LARGEST CONTAINER */
+
+  /* * BLUE ROW */
+
+  #blue-row div h6 {
+    font-size: 1rem;
+  }
+
+  #blue-row div button {
+    font-size: 0.6rem;
+    padding: 2px 7px;
+  }
+
+  #blue-row #col-1-blue-row button {
+    font-size: 0.6rem;
+    padding: 0.4rem 0.5rem;
+  }
 }
