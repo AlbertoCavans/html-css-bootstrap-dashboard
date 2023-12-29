@@ -241,4 +241,8 @@ a {
     font-size: 0.6rem;
     padding: 0.4rem 0.5rem;
   }
+
+  #blue-row div span {
+    font-size: 0.8rem;
+  }
 }
