@@ -40,13 +40,13 @@ UTILS------------------------------------------------------
 }
 
 DEBUG---------------------------------------------------------
- 
+ */
 .debug {
   min-height: 80px;
   background-color: lightgrey;
-  padding: 2rem;
+  /*   padding: 2rem; */
   border: 2px dashed red;
-}*/
+}
 
 /* GENERAL */
 
@@ -95,11 +95,12 @@ a {
 }
 /* * MAIN */
 
-/* * COL MENU */
+/* * SIDE BAR */
 
 #main-sidebar {
   width: 70px;
   height: calc(100vh - 90px);
+  top: 70px;
 }
 
 #main-sidebar a:hover {
@@ -143,10 +144,34 @@ a {
   border-top: 40px solid transparent;
 }
 
+/* * LARGEST CONTAINER */
+
+#largest-container {
+  overflow: scroll;
+}
+
+/* * BLUE ROW */
+
 .col-12 .button-dark-blue {
   background-color: rgb(22 91 186);
   font-size: 0.7rem;
   border: none;
+}
+
+/* * TRASPARENT ROW */
+
+/*  CARD 1 */
+
+#card-1 th {
+  font-weight: normal;
+}
+
+#card-1 .btn.text-white {
+  font-size: 0.7rem;
+}
+
+#card-1 .btn.rounded-circle {
+  background-color: rgb(242 101 81);
 }
 
 /* ! RESPOSIVE TABLET */
@@ -157,7 +182,7 @@ a {
 
   /* * MAIN */
 
-  /* * COL MENU */
+  /* * SIDE BAR */
 
   #main-sidebar {
     width: 50px;
@@ -195,11 +220,12 @@ a {
 
   /* * MAIN */
 
-  /* * COL MENU */
+  /* * SIDE BAR */
 
   #main-sidebar {
     width: 150px;
     height: calc(100vh - 90px);
+    top: 90px;
   }
 
   .upper-main-sidebar {
