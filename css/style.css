@@ -174,6 +174,27 @@ a {
   background-color: rgb(242 101 81);
 }
 
+/*  CARD 2 */
+
+#card-2 ul {
+  list-style: none;
+  padding: 0;
+}
+
+#card-2 li button {
+  border-bottom: 1px solid lightgray;
+}
+
+#card-2 li:last-of-type button {
+  border: none;
+}
+
+#card-2 li button:focus {
+  background-color: lightblue;
+  border: 6px solid blue;
+  z-index: 2;
+}
+
 /* ! RESPOSIVE TABLET */
 @media all and (min-width: 576px) {
   .nav {
