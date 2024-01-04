@@ -179,6 +179,15 @@ a {
   z-index: 2;
 }
 
+/* CARD 3 */
+
+/* CARD 4 */
+
+#card-4 a {
+  text-decoration: underline;
+  color: blue;
+}
+
 /* ! RESPOSIVE TABLET */
 @media all and (min-width: 576px) {
   .nav {
