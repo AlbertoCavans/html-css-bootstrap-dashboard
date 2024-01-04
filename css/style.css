@@ -132,6 +132,8 @@ a {
 
 #largest-container {
   overflow: scroll;
+  top: 70px;
+  position: relative;
 }
 
 /* * BLUE ROW */
@@ -265,6 +267,10 @@ a {
   }
 
   /* * LARGEST CONTAINER */
+
+  #largest-container {
+    top: 90px;
+  }
 
   /* * BLUE ROW */
 
