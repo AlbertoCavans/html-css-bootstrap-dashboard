@@ -131,7 +131,7 @@ a {
 /* * LARGEST CONTAINER */
 
 #largest-container {
-  overflow: scroll;
+  overflow: auto;
   top: 70px;
   position: relative;
   width: calc(100% - 70px);
