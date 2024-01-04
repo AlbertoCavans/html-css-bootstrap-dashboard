@@ -146,6 +146,10 @@ a {
   border: none;
 }
 
+.offcanvas {
+  width: 100% !important;
+}
+
 /* * TRASPARENT ROW */
 
 /*  CARD 1 */
@@ -301,5 +305,9 @@ a {
 
   #blue-row div span {
     font-size: 0.8rem;
+  }
+
+  .offcanvas {
+    width: 50% !important;
   }
 }
