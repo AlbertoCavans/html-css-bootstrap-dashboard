@@ -151,14 +151,41 @@
         <div class="row text-white bg-primary py-md-2" id="blue-row">
           <!-- COL 1 - BLUE ROW -->
           <div
-            class="col-12 col-md-4 col-lg-3 py-2 order-md-1 py-lg-0 d-lg-flex lg-justify-content-center"
+            class="col-12 col-md-4 col-lg-3 py-2 order-md-1 py-lg-0 d-lg-flex justify-content-center"
             id="col-1-blue-row"
           >
             <div class="d-block">
               <h6 class="d-inline-block p-2">Nuovo studente</h6>
-              <button type="button" class="btn btn-outline-light m-2">
+
+              <button
+                class="btn btn-outline-light m-2"
+                type="button"
+                data-bs-toggle="offcanvas"
+                data-bs-target="#offcanvasRight"
+                aria-controls="offcanvasRight"
+              >
                 <i class="fa-solid fa-plus"></i>
               </button>
+
+              <div
+                class="offcanvas offcanvas-end"
+                tabindex="-1"
+                id="offcanvasRight"
+                aria-labelledby="offcanvasRightLabel"
+              >
+                <div class="offcanvas-header">
+                  <h5 class="offcanvas-title" id="offcanvasRightLabel">
+                    Offcanvas right
+                  </h5>
+                  <button
+                    type="button"
+                    class="btn-close"
+                    data-bs-dismiss="offcanvas"
+                    aria-label="Close"
+                  ></button>
+                </div>
+                <div class="offcanvas-body">...</div>
+              </div>
             </div>
           </div>
 
