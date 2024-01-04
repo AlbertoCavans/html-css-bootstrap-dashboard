@@ -157,6 +157,7 @@
             <div class="d-block">
               <h6 class="d-inline-block p-2">Nuovo studente</h6>
 
+              <!-- ! OFFCANVAS BUTTON -->
               <button
                 class="btn btn-outline-light m-2"
                 type="button"
@@ -167,6 +168,7 @@
                 <i class="fa-solid fa-plus"></i>
               </button>
 
+              <!-- ! OFFCANVAS -->
               <div
                 class="offcanvas offcanvas-end"
                 tabindex="-1"
@@ -174,9 +176,12 @@
                 aria-labelledby="offcanvasRightLabel"
               >
                 <div class="offcanvas-header">
+                  <!-- TITLE -->
                   <h5 class="offcanvas-title" id="offcanvasRightLabel">
-                    Offcanvas right
+                    Inserisci un nuovo studente
                   </h5>
+
+                  <!-- CLOSING BUTTON -->
                   <button
                     type="button"
                     class="btn-close"
@@ -184,7 +189,165 @@
                     aria-label="Close"
                   ></button>
                 </div>
-                <div class="offcanvas-body">...</div>
+                <div class="offcanvas-body">
+                  <form>
+                    <div class="row">
+                      <div class="col-6">
+                        <!-- NAME CONTROL -->
+                        <div class="mb-3">
+                          <label for="nome" class="form-label">Nome</label>
+                          <input
+                            type="text"
+                            class="form-control"
+                            id="namecontrol"
+                            aria-describedby="namecontrol"
+                            required
+                          />
+                        </div>
+                      </div>
+                      <div class="col-6">
+                        <!-- SURNAME CONTROL -->
+                        <div class="mb-3">
+                          <label for="surnamecontrol" class="form-label"
+                            >Cognome</label
+                          >
+                          <input
+                            type="text"
+                            class="form-control"
+                            id="surnamecontrol"
+                            aria-describedby="surnamecontrol"
+                            required
+                          />
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="row">
+                      <div class="col-6">
+                        <!-- EMAIL CONTROL -->
+                        <div>
+                          <label for="email" class="form-label">Email</label>
+                          <div class="input-group mb-3">
+                            <span class="input-group-text" id="basic-addon1"
+                              >@</span
+                            >
+                            <input
+                              type="email"
+                              class="form-control"
+                              aria-label="email"
+                              aria-describedby="basic-addon1"
+                              required
+                            />
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-6">
+                        <!-- PASSWORD CONTROL -->
+                        <div class="mb-3">
+                          <label for="password" class="form-label"
+                            >Password</label
+                          >
+                          <input
+                            type="password"
+                            class="form-control"
+                            id="password"
+                            required
+                          />
+                        </div>
+                      </div>
+                    </div>
+
+                    <!-- ADDRESS CONTROL -->
+                    <div class="mb-3">
+                      <label for="address" class="form-label">Indirizzo</label>
+                      <input
+                        type="text"
+                        class="form-control"
+                        id="address"
+                        aria-describedby="address"
+                        required
+                      />
+                    </div>
+
+                    <div class="row">
+                      <div class="col-6">
+                        <!-- CITY CONTROL -->
+                        <div class="mb-3">
+                          <label for="city" class="form-label">Città</label>
+                          <input
+                            type="text"
+                            class="form-control"
+                            id="city"
+                            aria-describedby="city"
+                            required
+                          />
+                        </div>
+                      </div>
+
+                      <div class="col-3">
+                        <!-- COUNTRY CONTROL -->
+                        <label for="select-country" class="form-label"
+                          >Stato</label
+                        >
+                        <select
+                          class="form-select"
+                          id="select-country"
+                          aria-label="Default select example"
+                          required
+                        >
+                          <option selected>Scegli...</option>
+                          <option value="1">One</option>
+                          <option value="2">Two</option>
+                          <option value="3">Three</option>
+                        </select>
+                      </div>
+                      <div class="col-3">
+                        <!-- CAP CONTROL -->
+                        <div class="mb-3">
+                          <label for="CAP" class="form-label">CAP</label>
+                          <input
+                            type="text"
+                            class="form-control"
+                            id="CAP"
+                            aria-describedby="CAP"
+                            required
+                          />
+                        </div>
+                      </div>
+
+                      <!-- FOTO CONTROL -->
+                    </div>
+                    <div class="mb-3">
+                      <label for="formFile" class="form-label">Foto</label>
+                      <input
+                        class="form-control"
+                        type="file"
+                        id="formFile"
+                        required
+                      />
+                    </div>
+
+                    <!-- CHECKBOX -->
+
+                    <div class="mb-3 form-check">
+                      <input
+                        type="checkbox"
+                        class="form-check-input"
+                        id="exampleCheck1"
+                        required
+                      />
+                      <label class="form-check-label" for="exampleCheck1"
+                        >Seleziona per proseguire</label
+                      >
+                    </div>
+
+                    <!-- SUBMIT BUTTON -->
+                    <button type="submit" class="btn btn-primary">Salva</button>
+
+                    <!-- RESET BUTTON -->
+                    <button type="reset" class="btn btn-warning">Svuota</button>
+                  </form>
+                </div>
               </div>
             </div>
           </div>
