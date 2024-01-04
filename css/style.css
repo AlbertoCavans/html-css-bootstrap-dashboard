@@ -99,8 +99,10 @@ a {
 
 #main-sidebar {
   width: 70px;
-  height: calc(100vh - 90px);
+  height: calc(100vh - 70px);
   top: 70px;
+  background-image: url(/img/sidebar-bg.png);
+  background-color: rgb(19 41 63);
 }
 
 #main-sidebar a:hover {
@@ -111,37 +113,19 @@ a {
   margin-bottom: 20px;
   position: relative;
   width: 70px;
-  height: 190px;
-  background-color: rgb(5 30 52);
+  height: 150px;
   color: white;
   font-size: 1.3rem;
   padding-bottom: 10px;
-}
-
-.upper-main-sidebar::after {
-  content: "";
-  position: absolute;
-  bottom: -39px;
-  border-bottom: 40px solid transparent;
-  border-right: 71px solid rgb(5 30 52);
 }
 
 .bottom-main-sidebar {
   margin-top: 20px;
   position: relative;
   width: 70px;
-  height: calc(100% - 190px);
-  background-color: rgb(19 41 63);
+  height: calc(100% - 170px);
   color: white;
   font-size: 1.3rem;
-}
-
-.bottom-main-sidebar::after {
-  border-left: 70px solid rgb(19 41 63);
-  content: "";
-  position: absolute;
-  top: -39px;
-  border-top: 40px solid transparent;
 }
 
 /* * LARGEST CONTAINER */
@@ -207,12 +191,12 @@ a {
 
   #main-sidebar {
     width: 50px;
-    height: calc(100vh - 90px);
+    height: calc(100vh - 70px);
   }
 
   .upper-main-sidebar {
     width: 50px;
-    height: 160px;
+    height: 140px;
     font-size: 1rem;
     padding-bottom: 10px;
   }
@@ -251,7 +235,7 @@ a {
 
   .upper-main-sidebar {
     width: 150px;
-    height: 190px;
+    height: 160px;
     font-size: 1.2rem;
     padding-bottom: 10px;
   }
@@ -262,7 +246,7 @@ a {
 
   .bottom-main-sidebar {
     width: 150px;
-    height: calc(100% - 210px);
+    height: calc(100% - 180px);
     font-size: 1.2rem;
   }
 
