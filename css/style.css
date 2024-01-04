@@ -134,6 +134,8 @@ a {
   overflow: scroll;
   top: 70px;
   position: relative;
+  width: calc(100% - 70px);
+  left: 35px;
 }
 
 /* * BLUE ROW */
@@ -226,6 +228,13 @@ a {
     top: -39px;
     border-left: 50px solid rgb(19 41 63);
   }
+
+  /* * LARGEST CONTAINER */
+
+  #largest-container {
+    width: calc(100% - 50px);
+    left: 25px;
+  }
 }
 
 /* ! RESPONSIVE DESKTOP */
@@ -269,6 +278,8 @@ a {
   /* * LARGEST CONTAINER */
 
   #largest-container {
+    width: calc(100% - 150px);
+    left: 75px;
     top: 90px;
   }
 
